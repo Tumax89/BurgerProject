@@ -1,0 +1,13 @@
+
+
+Route component дотор тухайн component-ийг заагаад өгөхөөр тухайн тухайн component-ийг render хийхдээ 3 ширхэг тусгай props=ийг тухайн component рүү дамжуулдаг(match, history, location). Route нь зөвхөн хариуцсан component-рүүгээ л 3 props-оо дамжуулдаг.
+// <Switch>
+<Route path="/orders? component={OrderPage} />
+</Switch>
+
+ Өөр component-оос дээрхи гурван props ашиглах тохиолдолд withRouter component гэх high order component-ийг ашигладаг. withRouter high order component нь 
+import { withRouter } from "react-router-dom"; дотор байрладаг бөгөөд зүгээр л энгийн функц гэсэн үг бөгөөд гэхдээ ямар нэгэн jsx буцаадаггүй. ямар нэгэн component дээр withRouter-тэй холбоотой нэмэлт функцуудыг оруулж өгдөг.
+
+import { withRouter } from "react-router-dom"; гэж оруулж ирнэ.
+const Burger = props => {}
+export default withRouter(Burger); гэж буцаана.

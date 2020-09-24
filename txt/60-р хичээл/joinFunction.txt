@@ -1,0 +1,4 @@
+join гэдэг функц нь массивын элементүүдийг ямар нэгэн тэмдэгтээр бүгдийг нь холбоод нэг string болгодог. (const query = params.join("$)) гэх мэт.
+
+const query = new URLSearchParams(this.props.location.search);
+for(let param of query.entries()) энэ доторхи "entries" гэдэг тухайн хувьсагч доторхи зүйлсийг буцаагаад массив болгож хувиргадаг.

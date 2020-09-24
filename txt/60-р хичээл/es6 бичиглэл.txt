@@ -1,0 +1,16 @@
+const query = new URLSearchParams(this.props.location.search);
+const orts = {};
+for(let param of query.entries()) {
+    orts[param[0] = param [1]]
+}
+this.setState({ingredients: orts});
+} гэдэг бичиглэлийг ES6 дээр дараахь байдлаар бичиж болно.
+
+const query = new URLSearchParams(this.props.location.search);
+const ingredients = {};
+for(let param of query.entries()) {
+    orts[param[0] = param [1]]
+}
+this.setState({ingredients});
+}
+юу гэсэн үг юэ гэвэл тухайн property болон хувьсагчийн нэр адилхан байвал товчилж бичих боломжтой болно.
